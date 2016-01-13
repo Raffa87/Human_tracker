@@ -1,0 +1,4 @@
+geometry_msgs/PoseWithCovarianceStamped pose
+float64 likelihood
+bool flag
+int32 counter_debug

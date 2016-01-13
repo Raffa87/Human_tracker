@@ -1,0 +1,19 @@
+#http://wiki.ros.org/move_base?distro=hydro
+
+base_global_planner: "navfn/NavfnROS"
+#base_global_planner: "carrot_planner/CarrotPlanner"
+#base_global_planner: "global_planner/GlobalPlanner"
+#base_global_planner: "hcom/AStarPlanner"
+#base_global_planner: "hcom/VisibilityPlanner"
+#base_global_planner: "hcom/GeneralPlanner"
+
+base_local_planner: "base_local_planner/TrajectoryPlannerROS"
+
+planner_frequency: 0.5
+#planner_frequency: 1
+shutdown_costmaps: true
+
+controller_frequency: 10.0
+recovery_behaviour_enabled: false
+clearing_rotation_allowed: false
+

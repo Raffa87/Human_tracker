@@ -1,0 +1,32 @@
+TrajectoryPlannerROS:
+#robot config
+  holonomic_robot: false
+
+  acc_lim_x: 1.5
+  acc_lim_y: 0.0
+  acc_lim_theta: 2.0
+
+  max_vel_x: 1.2
+  min_vel_x: 0.01
+
+  max_vel_theta: 1.2
+  min_vel_theta: -1.2
+
+  min_in_place_vel_theta: 0.8
+  escape_vel: -0.1
+
+  path_distance_bias: 2.0 #default .6
+  goal_distance_bias: 0.8 #default .8
+  occdist_scale: 0.01 #default 0.01
+
+#goal tolerance
+  yaw_goal_tolerance: 0.16
+  xy_goal_tolerance: 0.2
+
+#forward sim
+  sim_time: 2.0
+
+#trajectory scoring
+  meter_scoring: true
+  dwa: false
+  publish_cost_grid_pc: false

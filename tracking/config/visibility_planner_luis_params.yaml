@@ -1,0 +1,5 @@
+VisibilityPlanner:
+   visibility_map_file: /home/yoichims/catkin_ws/maps/visibility/visibility.map
+   k_dist: 0.2
+   k_cost: 0.0
+   k_visibility: 0.8

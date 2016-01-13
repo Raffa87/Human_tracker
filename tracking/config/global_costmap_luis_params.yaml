@@ -1,0 +1,35 @@
+global_costmap:
+ global_frame: /map
+ robot_base_frame: base_link
+ update_frequency: 0.5
+ static_map: false
+ inflation_layer:
+  inflation_radius: 0.55
+  cost_scaling_factor: 10.0
+
+
+ 
+ plugins:
+   - {name: static_map,          type: "costmap_2d::StaticLayer" }     
+   - {name: footprint_layer,     type: "costmap_2d::FootprintLayer"}      
+#   - {name: hcom_layer,          type: "hcom_layer_namespace::hcomLayer", output: "screen"}       
+# hcom_layer:
+#  topology_path_file: /home/yoichims/catkin_ws/maps/korien_3to1.path
+#  topology_path_file: /home/yoichims/catkin_ws/maps/all.path
+#  topology_path_file: /home/yoichims/catkin_ws/maps/2014_08_2nd_floor_topology_1.path
+
+#   - {name: social_layer,          type: "social_layer_namespace::socialLayer", output: "screen"}
+# social_layer:
+#  topology_path_file: /home/yoichims/catkin_ws/maps/korien_3to1.path
+#  topology_path_file: /home/yoichims/catkin_ws/maps/korien_2to3.path
+#  topology_path_file: /home/yoichims/catkin_ws/maps/journal.path
+
+#   - {name: topological_layer,          type: "hcom_layer_namespace::topologicalLayer", output: "screen"}         
+#   - {name: gaussian_layer,          type: "hcom_layer_namespace::gaussianLayer", output: "screen"}         
+#   - {name: inflation_layer,  type: "costmap_2d::InflationLayer"}      
+
+
+#   - {name: simple_layer,        type: "simple_layer_namespace::SimpleLayer"}
+#   - {name: grid_layer,          type: "simple_layer_namespace::GridLayer", output: "screen"}     
+
+

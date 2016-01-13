@@ -1,0 +1,11 @@
+obstacle_range: 4.0
+raytrace_range: 4.0
+
+robot_radius: 0.35
+footprint_padding: 0.05
+
+unknown_cost_value: 0
+
+# obstacle_layer:
+#   observation_sources: laser
+#   laser: {topic: scan, data_type: LaserScan, expected_update_rate: 0.6, observation_persistence: 0.0, marking: true, clearing: true}
