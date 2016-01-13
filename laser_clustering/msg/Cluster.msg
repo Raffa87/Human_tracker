@@ -1,0 +1,2 @@
+sensor_msgs/PointCloud cluster
+geometry_msgs/Point centroid
